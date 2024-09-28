@@ -1,6 +1,6 @@
 # Allegro 5 Pacman Game Template
 
-![preview](docs/imgs/preview.jpg)
+![preview](docs/imgs/preview.png)
 
 Related Links:
 - [Exercises](/Exercises)
@@ -43,8 +43,11 @@ Follow the steps [here](docs/README.md).
 
   [Examples](https://github.com/liballeg/allegro5/tree/master/examples)
 
-- GitHub repo of I2P(I) final project before 2020
+- GitHub repo of I2P(I) Final Project 2020
   [Source Code](https://github.com/j3soon/Allegro5Template)
+
+- GitHub repo of I2P(I) Final Project 2023
+  [Source Code](https://github.com/AndersonKao/Allegro5Template)
 
 ## Tutorials
 
@@ -269,3 +272,8 @@ Follow the steps [here](docs/README.md).
 
 - Suggestion: Legacy Build System
     - If you see some missing error messages, please switch to the legacy build system. Please refer [here](https://stackoverflow.com/questions/51205221/how-can-i-use-the-legacy-build-system-with-xcode-10s-xcodebuild) 
+
+- Mac OS Thread 1: Signal SIGABRT
+    - Go to Project > Signing & Capabilities > All > Hardened Runtime and check Disable Library Validation
+    
+      ![](docs/imgs/mac_disable_library_validation.png)
