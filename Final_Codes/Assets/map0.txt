@@ -18,3 +18,5 @@ _#...#_______________
 #...................#
 #.....#########.....#
 ##...##_______#######
+
+IF YOU WANT TO CHANGE THE MAP, PLEASE MAKE IT AT LEAST 2 BLOCK WIDE FOR PREVENT UNEXPECTED ERROR
