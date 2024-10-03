@@ -248,3 +248,5 @@ ModelManifest.xml
 *.o
 log.txt
 pacman
+
+.DS_Store

@@ -1,3 +1,6 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#define _CRT_SECURE_NO_WARNINGS
+
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_font.h>
 #include <stdlib.h>
@@ -39,10 +42,25 @@ void change_bgm(char* audio_path) {
 }
 
 void init_Util(void){
-    TITLE_FONT = al_load_font(font_file, 64, 0);
+    TITLE_FONT = al_load_font("Minecraft.ttf", 64, 0);
+    if(!TITLE_FONT){
+        game_abort("Failed to load Title Font");
+    }
+    
     P1_FONT = al_load_font(font_file, 48, 0);
+    if(!P1_FONT){
+        game_abort("Failed to load P1 Font");
+    }
+    
     P2_FONT = al_load_font(font_file, 36, 0);
+    if(!P2_FONT){
+        game_abort("Failed to load P2 Font");
+    }
+    
     P3_FONT = al_load_font(font_file, 24, 0);
+    if(!P3_FONT){
+        game_abort("Failed to load P3 Font");
+    }
 }
 
 void destroy_init(void) {
@@ -64,14 +82,13 @@ void print_log(const char * msg, va_list arg, logtype type){
     // Open File
     static bool firstOpen = true;
     FILE* f;
-    errno_t err;
 
     if (firstOpen) {
-        err = fopen_s(&f, log_file, "w");
+        f = fopen(log_file, "w");
         firstOpen = false;
     }
     else {
-        err = fopen_s(&f, log_file, "a");
+        f = fopen(log_file, "a");
     }
     
     switch(type){
@@ -98,7 +115,7 @@ void print_log(const char * msg, va_list arg, logtype type){
     
     vprintf(msg, arg);
     printf("\n");
-    if(err == 0 || f != NULL){
+    if(f != NULL){
         vfprintf(f, msg, arg);
         fprintf(f, "\n");
         fclose(f);

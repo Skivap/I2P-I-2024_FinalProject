@@ -148,6 +148,7 @@
 
 - [Video Tutorial(Chinese)](https://youtu.be/QZdHjFQUQPo).
   - ~~[Video Tutorial(Chinese)](https://youtu.be/7nJNDRCq5o0).~~(Old macOS 10.X)
+- [Video Tutorial for Apple Silicon (English)](https://www.youtube.com/watch?v=__rX2gwgd00)
 1. Install allegro by following [Official Guide(English)](https://github.com/liballeg/allegro_wiki/wiki/Quickstart#install-with-homebrew)
 
 2. Open `XCode`, Create a new `MacOS` project, choose `App`.
@@ -209,6 +210,10 @@
 11. Click the `Play` button.
 
   ![](imgs/mac-result.png)
+
+12. If it's doesn't work, go to Project > Signing & Capabilities > All > Hardened Runtime and check Disable Library Validation
+
+  ![](imgs/mac_disable_library_validation.png)
 
 ## Note 
 (For Code::Blocks, Dev-C++, XCode)
