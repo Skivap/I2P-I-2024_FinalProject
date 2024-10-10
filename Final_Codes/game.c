@@ -67,12 +67,16 @@ void initGame(void){
     if(!al_init_image_addon())
         game_abort("couldn't initialize image addon\n");
     
+    game_log("Initialized Allegro");
+    
     // Create Game Display
     gameDisplay = al_create_display(SCREEN_W, SCREEN_H);
     if (!gameDisplay)
         game_abort("failed to create display");
     // Set Window Title
     al_set_window_title(gameDisplay, GAME_TITLE);
+    
+    game_log("Initialized Window Display");
     
     //Set event queue
     event_queue = al_create_event_queue();
@@ -92,6 +96,8 @@ void initGame(void){
     al_register_event_source(event_queue, al_get_timer_event_source(gameTick));
     al_register_event_source(event_queue, al_get_keyboard_event_source());
     al_register_event_source(event_queue, al_get_mouse_event_source());
+    
+    game_log("Initialized Event Queue and Source");
 
     // Initialize Utility
     init_Util();

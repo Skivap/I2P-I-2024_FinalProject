@@ -15,9 +15,12 @@ Button button_create(int x, int y, int w, int h, const char* default_image_path,
 	button.default_img = al_load_bitmap(default_image_path);
 	button.hovered_img = al_load_bitmap(hovered_image_path);
 
-	if (!button.default_img || !button.hovered_img) {
-		game_log("failed loading button image!");
+	if (!button.default_img) {
+        game_log("failed loading button image %s", default_image_path);
 	}
+    if (!button.hovered_img) {
+        game_log("failed loading button image %s", hovered_image_path);
+    }
 
 	button.x = x;
 	button.y = y;

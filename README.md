@@ -281,3 +281,7 @@ Follow the steps [here](docs/README.md).
     - Go to Project > Signing & Capabilities > All > Hardened Runtime and check Disable Library Validation
     
       ![](docs/imgs/mac_disable_library_validation.png)
+    
+- Xcode 16
+
+  If you isntalled the lastest MacOS and XCode update, your XCode folder structure is uncompatible with previous version. For this fix, we provided a new folder XCode 16 as the file to be use for the project.

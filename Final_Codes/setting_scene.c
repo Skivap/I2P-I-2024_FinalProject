@@ -12,7 +12,7 @@ static void init(void) {
 }
 
 static void update(void) {
-    float lastVolume = BGM_VOLUME;
+
     update_button(&backButton);
 
     if (mouseState.buttons && backButton.hovered == true) {

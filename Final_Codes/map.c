@@ -104,6 +104,9 @@ Map create_map(char * path, uint8_t type){
     get_map_offset(&map);
 
     map.coin_audio = al_load_sample("Assets/audio/coins.mp3");
+    if(!map.coin_audio){
+        game_abort("Can't load coin audio");
+    }
 
     fclose(f);
     

@@ -8,7 +8,16 @@
 Weapon create_weapon(char * weapon_path, char * bullet_path, int cooldown, int speed, int damage){
     Weapon weapon;
     weapon.image = al_load_bitmap(weapon_path);
-    weapon.shooting_audio = al_load_sample("Assets/audio/shooting.mp3");
+    if(!weapon.image){
+        game_abort("Failed to load Image %s", weapon_path);
+    }
+    
+    const char* audio_path = "Assets/audio/shooting.mp3";
+    weapon.shooting_audio = al_load_sample(audio_path);
+    if(!weapon.shooting_audio){
+        game_abort("Failed to load Audio %s", audio_path);
+    }
+    
     weapon.bullet_path = bullet_path;
     weapon.cooldown = cooldown;
     weapon.cooldown_counter = 0;
