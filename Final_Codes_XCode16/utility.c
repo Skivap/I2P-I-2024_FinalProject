@@ -14,7 +14,7 @@ const int SCREEN_H = 800;
 const int RESERVE_SAMPLES = 10;
 const char* GAME_TITLE = "NTHU-RPG Adventure";
 const char* log_file = "log.txt";
-const char* font_file = "Assets/Minecraft.ttf";
+const char* font_file = "Minecraft.ttf";
 const int TILE_SIZE = 64;
 
 ALLEGRO_SAMPLE* BGM = NULL;

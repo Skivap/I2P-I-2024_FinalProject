@@ -32,7 +32,7 @@ void initEnemy(void){
     // as every enemy bitmap are pointer, they will point to the same global bitmap variable
 
     // Slime
-    char * slimePath = "Assets/Slime.png";
+    char * slimePath = "Slime.png";
     slimeBitmap = al_load_bitmap(slimePath);
     if(!slimeBitmap){
         game_abort("Error Load Bitmap with path : %s", slimePath);

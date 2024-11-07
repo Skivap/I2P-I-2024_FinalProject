@@ -90,12 +90,12 @@ Map create_map(char * path, uint8_t type){
         }
     }
     
-    map.assets = al_load_bitmap("Assets/map_packets.png");
+    map.assets = al_load_bitmap("map_packets.png");
     if(!map.assets){
         game_abort("Can't load map assets");
     }
 
-    map.coin_assets = al_load_bitmap("Assets/coins.png");
+    map.coin_assets = al_load_bitmap("coins.png");
     if (!map.coin_assets) {
         game_abort("Can't load coin assets");
     }
@@ -103,7 +103,7 @@ Map create_map(char * path, uint8_t type){
     // load the offset for each tiles type
     get_map_offset(&map);
 
-    map.coin_audio = al_load_sample("Assets/audio/coins.mp3");
+    map.coin_audio = al_load_sample("coins.mp3");
     if(!map.coin_audio){
         game_abort("Can't load coin audio");
     }

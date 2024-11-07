@@ -14,7 +14,7 @@ static ALLEGRO_BITMAP* player_bitmap;
 static void init(void) {
     timer_countdown = 60;
 
-    player_bitmap = al_load_bitmap("Assets/panda2.png");
+    player_bitmap = al_load_bitmap("panda2.png");
     if (!player_bitmap) {
         game_abort("Failed to load player bitmap");
     }

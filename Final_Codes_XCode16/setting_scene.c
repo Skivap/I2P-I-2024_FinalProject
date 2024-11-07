@@ -8,7 +8,7 @@
 static Button backButton;
 
 static void init(void) {
-    backButton = button_create(SCREEN_W / 2 - 200, 650, 400, 100, "Assets/UI_Button.png", "Assets/UI_Button_hovered.png");
+    backButton = button_create(SCREEN_W / 2 - 200, 650, 400, 100, "UI_Button.png", "UI_Button_hovered.png");
 }
 
 static void update(void) {

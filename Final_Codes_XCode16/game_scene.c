@@ -24,14 +24,14 @@ static void init(void){
     
     initEnemy();
     
-    map = create_map("Assets/map0.txt", 0);
+    map = create_map("map0.txt", 0);
 
-    player = create_player("Assets/panda2.png", map.Spawn.x, map.Spawn.y);
+    player = create_player("panda2.png", map.Spawn.x, map.Spawn.y);
 
     enemyList = createEnemyList();
     bulletList = createBulletList();
 
-    weapon = create_weapon("Assets/guns.png", "Assets/yellow_bullet.png", 16, 8, 10);
+    weapon = create_weapon("guns.png", "yellow_bullet.png", 16, 8, 10);
     
     for(int i=0; i<map.EnemySpawnSize; i++){
         Enemy enemy = createEnemy(map.EnemySpawn[i].x, map.EnemySpawn[i].y, map.EnemyCode[i]);
@@ -39,7 +39,7 @@ static void init(void){
     }
 
     game_log("coord x:%d \n coords y:%d \n", map.Spawn.x, map.Spawn.y);
-    change_bgm("Assets/audio/game_bgm.mp3");
+    change_bgm("game_bgm.mp3");
 }
 
 static void update(void){
