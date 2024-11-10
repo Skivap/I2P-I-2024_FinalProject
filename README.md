@@ -1,4 +1,4 @@
-# Allegro 5 Pacman Game Template
+# Allegro 5 RPG Game Template
 
 ## Tutorial & Grading
 ### [Tutorial Link](https://docs.google.com/presentation/d/1Xf0GPLVFJ7KM-16hqSJm2uQBBLZpp8ywxE5CqhEwWgs/edit?usp=sharing)
