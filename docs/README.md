@@ -1,7 +1,7 @@
 # Installation
 
 > Images in this page are not updated, but most of them are just difference on version. 
-
+- [Using CMake](#cmake)
 - [Official Guide(English)](https://github.com/liballeg/allegro_wiki/wiki/Quickstart)
 - [Linux(Debian)](#linuxdebian)
 - [Windows](#windows)
@@ -14,7 +14,9 @@
 - [Note](#note)
 - [Others](#others)
 
+## [CMake](./cmake.md)
 
+The recommended way to setup the project. Easily and quickly.
 
 ## Linux(Debian)
 
