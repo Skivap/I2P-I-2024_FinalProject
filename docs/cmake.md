@@ -37,6 +37,13 @@ git clone --recurse-submodules <Copied-Url>
 ### 2. Installing Allegro library
 Run the ```setup_Windows.ps1``` or ```setup_MacOS_Linux.sh``` base on your operating system. This script will install Allegro library to the vcpkg included with this repo.
 
+If the script ```setup_Windows.ps1``` crash right after opening, open Powershell as Administrator and type in the following command
+
+```
+Set-ExecutionPolicy Unrestricted
+```
+then press A.
+
 ### 3. Open and build project
 
 Open the folder containing the ```CMakeLists.txt``` file in the code editor of your choice.
