@@ -1,15 +1,15 @@
 # Installation
 
 > Images in this page are not updated, but most of them are just difference on version. 
-- [Using CMake](#cmake)
 - [Official Guide(English)](https://github.com/liballeg/allegro_wiki/wiki/Quickstart)
+- [CMake (Windows, MacOS and Linux)(RECOMMEND)](./cmake.md)
 - [Linux(Debian)](#linuxdebian)
 - [Windows](#windows)
-  - [Visual Studio(RECOMMEND)](#visual-studio)
+  - [Visual Studio](#visual-studio)
   - [Code::Blocks](#codeblocks)
   - [Dev-C++](#dev-c)
 - [Mac OS](#mac-os)
-  - [homebrew(RECOMMEND)](#homebrew) 
+  - [homebrew](#homebrew) 
   - [XCode](#xcode)
 - [Note](#note)
 - [Others](#others)
