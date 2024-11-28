@@ -18,6 +18,7 @@ Related Links:
 Follow the steps [here](docs/README.md).
 
 - [Official Guide](https://github.com/liballeg/allegro_wiki/wiki/Quickstart)
+- [CMake (Windows, MacOS and Linux)](docs/cmake.md)
 - [Linux(Debian)](docs/README.md#linux-debian)
 - [Windows](docs/README.md#windows)
   - [Visual Studio](docs/README.md#visual-studio): [Video](https://youtu.be/HPHd92nj0Io)
