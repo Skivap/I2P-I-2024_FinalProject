@@ -103,7 +103,7 @@ Map create_map(char * path, uint8_t type){
     // load the offset for each tiles type
     get_map_offset(&map);
 
-    map.coin_audio = al_load_sample("coins.mp3");
+    map.coin_audio = al_load_sample("coins.ogg");
     if(!map.coin_audio){
         game_abort("Can't load coin audio");
     }

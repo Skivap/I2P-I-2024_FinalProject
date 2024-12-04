@@ -39,7 +39,7 @@ static void init(void){
     }
 
     game_log("coord x:%d \n coords y:%d \n", map.Spawn.x, map.Spawn.y);
-    change_bgm("game_bgm.mp3");
+    change_bgm("game_bgm.ogg");
 }
 
 static void update(void){

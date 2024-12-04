@@ -13,7 +13,7 @@ static Button settingButton;
 static void init(void) {
     settingButton = button_create(SCREEN_W / 2 - 200, 600, 400, 100, "UI_Button.png", "UI_Button_hovered.png");
 
-    change_bgm("menu_bgm.mp3");
+    change_bgm("menu_bgm.ogg");
 }
 
 static void update(void) {
